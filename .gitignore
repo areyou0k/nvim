@@ -1,0 +1,11 @@
+*.swp
+plugged/
+autoload/
+ftplugin/
+.netrwhist
+.DS_Store
+_machine_specific.vim
+.vim-bookmarks
+sessions/
+tmp/
+
