@@ -1,4 +1,4 @@
-noremap <LEADER>q :bd!<enter>
+noremap <LEADER>q :bd 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '...'
 let g:airline#extensions#tabline#buffer_nr_show = 0
