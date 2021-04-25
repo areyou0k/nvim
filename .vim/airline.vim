@@ -1,4 +1,4 @@
-noremap <LEADER>q :bd 
+noremap <LEADER>q :bd<enter>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 0
@@ -7,18 +7,18 @@ let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_theme = 'dark'  " 主题
 let g:airline#extensions#keymap#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#tabline#buffer_idx_format = {
-       \ '0': '0 ',
-       \ '1': '1 ',
-       \ '2': '2 ',
-       \ '3': '3 ',
-       \ '4': '4 ',
-       \ '5': '5 ',
-       \ '6': '6 ',
-       \ '7': '7 ',
-       \ '8': '8 ',
-       \ '9': '9 ',
-       \}
+"let g:airline#extensions#tabline#buffer_idx_format = {
+"       \ '0': '0 ',
+"       \ '1': '1 ',
+"       \ '2': '2 ',
+"       \ '3': '3 ',
+"       \ '4': '4 ',
+"       \ '5': '5 ',
+"       \ '6': '6 ',
+"       \ '7': '7 ',
+"       \ '8': '8 ',
+"       \ '9': '9 ',
+"       \}
 " 设置切换tab的快捷键 <\> + <i> 切换到第i个 tab
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
