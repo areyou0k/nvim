@@ -1,6 +1,6 @@
 noremap <LEADER>q :bd 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_alt_sep = '...'
+let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 0
 let g:airline#extensions#tabline#formatter = 'default'
 "let g:airline_theme = 'desertink'  " 主题
