@@ -1,5 +1,5 @@
 "################## COC     ####################
-let g:coc_global_extensions = ['coc-snippets', 'coc-go', 'coc-json',"coc-git","coc-yaml","coc-sh","coc-explorer"]
+let g:coc_global_extensions = ['coc-snippets', 'coc-go', 'coc-json',"coc-git","coc-yaml","coc-sh","coc-explorer","coc-markdownlint"]
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :

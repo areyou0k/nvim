@@ -248,15 +248,29 @@
 			],
 			"ignoredRootPaths": []
 		},
-		"go": {
+		"golang": {
 			"command": "gopls",
 			"rootPatterns": [
 				"go.mod"
 			],
-			"trace.server": "verbose",
 			"filetypes": [
 				"go"
-			]
+			],
+			"initializationOptions": {
+				"gocodeCompletionEnabled": true,
+				"diagnosticsEnabled": true,
+				"lintTool": "golint"
+			}
 		}
+		//"go": {
+		//	"command": "gopls",
+		//	"rootPatterns": [
+		//		"go.mod"
+		//	],
+		//	"trace.server": "verbose",
+		//	"filetypes": [
+		//		"go"
+		//	]
+		//}
 	}
 }

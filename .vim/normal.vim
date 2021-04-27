@@ -18,7 +18,7 @@ vmap ga :Tabularize /
 let g:tagbar_width=30
 "映射Tagbar的快捷键,按F8自动打开
 map <F8> :TagbarToggle<CR>
-
+let g:go_fmt_command = 'goimports'
 set timeout timeoutlen=300
 set dir=~/.local/share/nvim/swap/
 set clipboard+=unnamedplus
