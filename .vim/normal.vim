@@ -7,6 +7,7 @@ nmap <Leader><Leader>a :Ag <CR>
 noremap <C-s> <Esc>:w!<CR>
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 noremap <LEADER>z <C-w>j:wq<enter>
+" 获取当前时间2021-04-25 09:32:34
 nmap tn A<C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR><Esc>
 ""allows FZF to open by pressing CTRL-a
 map <C-a> :FZF<CR>
@@ -18,9 +19,8 @@ vmap ga :Tabularize /
 let g:tagbar_width=30
 "映射Tagbar的快捷键,按F8自动打开
 map <F8> :TagbarToggle<CR>
-let g:go_fmt_command = 'goimports'
+"let g:go_fmt_command = 'goimports'
 set timeout timeoutlen=300
 set dir=~/.local/share/nvim/swap/
 set clipboard+=unnamedplus
-" 获取当前时间2021-04-25 09:32:34
 let g:python3_host_prog = "/opt/homebrew/bin/python3"

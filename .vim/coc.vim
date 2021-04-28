@@ -56,4 +56,8 @@ function! s:show_documentation()
 		let l:found = CocAction('doHover')
 	endif
 endfunction
+autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
+autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
+autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 ""################## COC END ####################
