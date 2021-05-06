@@ -12,3 +12,4 @@ source $HOME/.config/nvim/.vim/godebug.vim
 source $HOME/.config/nvim/.vim/airline.vim
 source $HOME/.config/nvim/.vim/coc-explorer.vim
 source $HOME/.config/nvim/.vim/markdown.vim
+source $HOME/.config/nvim/.vim/coc-git.vim

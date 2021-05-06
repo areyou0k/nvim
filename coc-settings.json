@@ -66,11 +66,12 @@
 		"css",
 		"json",
 		"python",
-		"vue"
+		"vue",
+		"go"
 	],
 	"yaml.format.enable": true,
-	"explorer.width": 38,
-	"explorer.quitOnOpen": true,
+	"explorer.width": 30,
+	"explorer.quitOnOpen": false,
 	"explorer.sources": [
 		{
 			"name": "buffer",
@@ -255,12 +256,12 @@
 			],
 			"filetypes": [
 				"go"
-			],
-			"initializationOptions": {
-				"gocodeCompletionEnabled": true,
-				"diagnosticsEnabled": true,
-				"lintTool": "golint"
-			}
+			]
+			//"initializationOptions": {
+			//	"gocodeCompletionEnabled": true,
+			//	"diagnosticsEnabled": true,
+			//	"lintTool": "golint"
+			//}
 		}
 	}
 }

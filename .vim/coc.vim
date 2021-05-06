@@ -1,4 +1,3 @@
-"################## COC     ####################
 let g:coc_global_extensions = ['coc-snippets', 'coc-go', 'coc-json',"coc-git","coc-yaml","coc-sh","coc-explorer","coc-markdownlint"]
 
 inoremap <silent><expr> <TAB>
@@ -8,7 +7,6 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
 function! s:check_back_space() abort
 	let col = col('.') - 1
 	return ! col || getline('.')[col - 1] =~? '\s'
@@ -20,7 +18,7 @@ augroup user_plugin_coc
 augroup END
 
 " use <c-space>for trigger completion
-inoremap <silent><expr> <C-space> coc#refresh()
+inoremap <silent><expr> <C-o> coc#refresh()
 
 " Movement within 'ins-completion-menu'
 imap <expr><C-j>   pumvisible() ? "\<Down>" : "\<C-j>"
@@ -40,15 +38,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>p <Plug>(coc-format)
 
-nmap gs <Plug>(coc-git-chunkinfo)
-nmap [g <Plug>(coc-git-prevchunk)
-nmap ]g <Plug>(coc-git-nextchunk)
-" show commit contains current position
-nmap gC <Plug>(coc-git-commit)
-
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
-
 function! s:show_documentation()
 	if (index(['vim', 'help'], &filetype) >= 0)
 		execute 'h '.expand('<cword>')
@@ -56,8 +47,10 @@ function! s:show_documentation()
 		let l:found = CocAction('doHover')
 	endif
 endfunction
+
+" go add atg
 autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
 autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
-""################## COC END ####################
+"################## COC END ####################

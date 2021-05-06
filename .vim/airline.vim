@@ -1,4 +1,4 @@
-noremap <LEADER>q :bd<enter>
+noremap <LEADER>q :bdelete<enter>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 0
@@ -7,18 +7,6 @@ let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_theme = 'dark'  " 主题
 let g:airline#extensions#keymap#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-"let g:airline#extensions#tabline#buffer_idx_format = {
-"       \ '0': '0 ',
-"       \ '1': '1 ',
-"       \ '2': '2 ',
-"       \ '3': '3 ',
-"       \ '4': '4 ',
-"       \ '5': '5 ',
-"       \ '6': '6 ',
-"       \ '7': '7 ',
-"       \ '8': '8 ',
-"       \ '9': '9 ',
-"       \}
 " 设置切换tab的快捷键 <\> + <i> 切换到第i个 tab
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
@@ -47,18 +35,8 @@ let g:airline_symbols.branch = 'BR'
 let g:airline_symbols.readonly = "RO"
 let g:airline_symbols.dirty = "DT"
 let g:airline_symbols.crypt = "CR" 
-"set encoding=utf-8
-""set langmenu=zh_CN.UTF-8
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
 "" 设置打开文件的编码格式  
-"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 
-"set fileencoding=utf-8
-"" 解决菜单乱码
-"source $VIMRUNTIME/delmenu.vim
-"source $VIMRUNTIME/menu.vim
-"" 解决consle输出乱码
-""set termencoding = cp936  
-"" 设置中文提示
-"language messages zh_CN.utf-8 
-"" 设置中文帮助
-"set helplang=cn
-" 设置状态栏
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 
+set fileencoding=utf-8
